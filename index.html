@@ -1,102 +1,202 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link href="https://fonts.googleapis.com/css?family=Amiri|Open+Sans+Condensed:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300|Oswald" rel="stylesheet">
     <style type="text/css">
-        * { font-family: 'Amiri', serif;  }
-        p { margin: 1em; }
-        p,ul,li,a { font-size: 14pt; }
-        h1,h2,h3,h4 { font-family: 'Open Sans Condensed', serif; }
+
+        body {
+            margin: 0;
+        }
+
+        #content {
+            margin: 1em;
+        }
+
+        nav {
+            margin: 0;
+            background-color: #009AE8;
+        }
+
+        nav h1 {
+            margin: 0;
+            padding: 1em;
+            color: white;
+        }
+
+        p,a,summary {
+            font-family: 'Open Sans', Helvetica, Arial, sans-serif; color: #444;
+            font-size: 12pt;
+            line-height: 24pt;
+        }
+
+        h1,h2,h3,h4 {
+            margin: 0.7em 0;
+            font-weight: bolder;
+            font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+            color: #444;
+        }
+
+        header h3 {
+            font-family: 'Oswald', Helvetica, Arial, sans-serif;
+            font-weight: normal;
+            line-height: 56pt;
+            font-size: 24pt;
+        }
+
+        h4 {
+            font-size: 12pt;
+        }
+
+        h4.abstract {
+            font-size: 12pt;
+            display: inline;
+        }
+
+        h4.abstract:after {
+            content: ":";
+        }
+
+        article {
+            margin: 1em;
+            border-bottom: 1px solid black;
+        }
+
+        ul.authors {
+            margin: 0;
+            padding: 0;
+            text-indent: 0;
+        }
+
+        ul.authors li {
+            display: inline;
+            list-style: none;
+        }
+
+        ul.authors li, ul.authors li a {
+            font-family: 'Open Sans Condensed';
+            font-size: 16pt;
+        }
+
+        ul.authors li a {
+            color: #009AE8;
+            text-decoration: none;
+        }
+
+        ul.authors li:not(:last-child):after {
+            content: ','
+        }
+
+        header h3 {
+            margin-bottom: 0;
+        }
+
+        header small, header small a {
+            font-size: small;
+        }
+
+        summary {
+            margin-top: 1em;
+        }
+
+        nav {
+
+        }
+
     </style>
     <title>Brains On code</title>
     <meta name="description" content="Scientific projects concerning program comprehension, University of Passau">
     <meta name="keywords" lang="en" content="Science, fMRI, Passau, Programming, Comprehension">
 </head>
 <body>
-<div>
-<h1>Brains On Code</h1>
-    <section>
-        <h2>Papers</h2>
-        <article>
-            <header>
-                <h3>Shorter Identifier Names Take Longer To Comprehend (EMSE 18)</h3>
-                <small>DOI: <a href="http://dx.doi.org/10.1007%2Fs10664-018-9621-x">10.1007/2Fs10664-018-9621-x</a></small>
-            </header>
-            <h4>Abstract</h4>
-            <summary>
-                This article extends <a href="https://doi.org/10.1109/SANER.2017.7884623">Hofmeister, Siegmund, &amp; Holt (2017) @ SANER17, see below</a>. We analyze and discuss participants’ visual focus. The data were obtained in the original study using a restricted focus viewer, called the "letterbox", which limited the visible code to 7 lines at once.
-            </summary>
-            <h4>Resources</h4>
-            <ul>
-                <li><a href="https://github.com/brains-on-code/peter">Replication Package</a></li>
-                <li><a href="https://github.com/brains-on-code/shorter-identifier-names">Results</a></li>
-            </ul>
-            <h4>Authors</h4>
-            <ul>
-                <li><a href="http://www.cessor.de">Johannes C. Hofmeister</a></li>
-                <li><a href="http://www.infosun.fim.uni-passau.de/se/people-jsiegmund.php">Janet Siegmund</a></li>
-                <li><a href="http://www.psychologie.uni-heidelberg.de/ae/allg/mitarb/dh/">Daniel V. Holt</a></li>
-            </ul>
-        </article>
+    <nav>
+        <h1>Brains On Code</h1>
+        Heidelberg, Magdeburg, Passau, Raleigh, Redmond, Weimar
+    </nav>
+    <div id="content">
+        <section>
+            <h2>Papers</h2>
 
-        <article>
-            <header>
-                <h3>Shorter Identifier Names Take Longer To Comprehend (SANER 17)</h3>
-                <small>DOI: <a href="https://doi.org/10.1109/SANER.2017.7884623">10.1109/SANER.2017.7884623</a></small>
-            </header>
-            <h4>Preprint</h4>
-            <a href="shorter-identifier-names.pdf">Preprint - Shorter Identifier Names Take Longer To Comprehend, PDF, 327kb</a>
+            <article>
+                <header>
+                    <h3>Shorter Identifier Names Take Longer To Comprehend (EMSE 18)</h3>
+                </header>
+                <ul class="authors">
+                    <li><a href="http://www.cessor.de">Johannes C. Hofmeister</a></li>
+                    <li><a href="http://www.infosun.fim.uni-passau.de/se/people-jsiegmund.php">Janet Siegmund</a></li>
+                    <li><a href="http://www.psychologie.uni-heidelberg.de/ae/allg/mitarb/dh/">Daniel V. Holt</a></li>
+                </ul>
+                <summary>
+                    <h4 class="abstract">Abstract</h4>
+                    This article extends <a href="https://doi.org/10.1109/SANER.2017.7884623">Hofmeister, Siegmund, &amp; Holt (2017) @ SANER17, see below</a>. We analyze and discuss participants’ visual focus. The data were obtained in the original study using a restricted focus viewer, called the "letterbox", which limited the visible code to 7 lines at once.
+                </summary>
+                <h4>Resources</h4>
+                <ul class="resources">
+                    <li><a href="https://doi.org/10.1007%2Fs10664-018-9621-x">DOI: 10.1007/2Fs10664-018-9621-x</a></li>
+                    <li><a href="https://github.com/brains-on-code/peter">Replication Package</a></li>
+                    <li><a href="https://github.com/brains-on-code/shorter-identifier-names">Results</a></li>
+                </ul>
+            </article>
 
-            <h4>Abstract</h4>
-            <summary>
-                Developers spend the majority of their time comprehending code, a process in which identifier names play a key role. Although many identifier naming styles exist, they often lack an empirical basis and it is not quite clear whether short or long identifier names facilitate comprehension. In this paper, we investigate the effect of different identifier naming styles (letters, abbreviations, words) on program comprehension, and whether these effects arise because of their length or their semantics. We conducted an experimental study with 72 professional C# developers, who looked for defects in source-code snippets. We used a within-subjects design, such that each developer saw all three versions of identifier naming styles and we measured the time it took them to find a defect. We found that words lead to, on average, 19% faster comprehension speed compared to letters and abbreviations, but we did not find a significant difference in speed between letters and abbreviations. The results of our study suggest that defects in code are more difficult to detect when code contains only letters and abbreviations. Words as identifier names facilitate program comprehension and can help to save costs and improve software quality.
-            </summary>
-            <h4>Resources</h4>
-            <ul>
-                <li><a href="https://github.com/brains-on-code/peter">Replication Package</a></li>
-                <li><a href="https://github.com/brains-on-code/shorter-identifier-names">Results</a></li>
-            </ul>
-            <h4>Authors</h4>
-            <ul>
-                <li><a href="http://www.cessor.de">Johannes C. Hofmeister</a></li>
-                <li><a href="http://www.infosun.fim.uni-passau.de/se/people-jsiegmund.php">Janet Siegmund</a></li>
-                <li><a href="http://www.psychologie.uni-heidelberg.de/ae/allg/mitarb/dh/">Daniel V. Holt</a></li>
-            </ul>
-        </article>
+            <article>
+                <header>
+                    <h3>Shorter Identifier Names Take Longer To Comprehend (SANER 17)</h3>
+                </header>
+                <ul class="authors">
+                    <li><a href="http://www.cessor.de">Johannes C. Hofmeister</a></li>
+                    <li><a href="http://www.infosun.fim.uni-passau.de/se/people-jsiegmund.php">Janet Siegmund</a></li>
+                    <li><a href="http://www.psychologie.uni-heidelberg.de/ae/allg/mitarb/dh/">Daniel V. Holt</a></li>
+                </ul>
+                <summary>
+                    <h4 class="abstract">Abstract</h4>
+                    Developers spend the majority of their time comprehending code, a process in which identifier names play a key role. Although many identifier naming styles exist, they often lack an empirical basis and it is not quite clear whether short or long identifier names facilitate comprehension. In this paper, we investigate the effect of different identifier naming styles (letters, abbreviations, words) on program comprehension, and whether these effects arise because of their length or their semantics. We conducted an experimental study with <b>72 professional C# developers</b>, who looked for defects in source-code snippets. We used a within-subjects design, such that each developer saw all three versions of identifier naming styles and we measured the time it took them to find a defect. <b>We found that words lead to, on average, 19% faster comprehension speed compared to letters and abbreviations, but we did not find a significant difference in speed between letters and abbreviations.</b> The results of our study suggest that defects in code are more difficult to detect when code contains only letters and abbreviations. Words as identifier names facilitate program comprehension and can help to save costs and improve software quality.
+                </summary>
+                <h4>Resources</h4>
+                <ul class="resources">
+                    <li><a href="https://doi.org/10.1109/SANER.2017.7884623">DOI: 10.1109/SANER.2017.7884623</a></li>
+                    <li><a href="shorter-identifier-names.pdf">Preprint - Shorter Identifier Names Take Longer To Comprehend, PDF, 327kb</a></li>
+                    <li><a href="https://github.com/brains-on-code/peter">Replication Package</a></li>
+                    <li><a href="https://github.com/brains-on-code/shorter-identifier-names">Results</a></li>
+                </ul>
+            </article>
 
-        <article>
-            <header>
-                <h3>Measuring Neural Efficiency of Program Comprehension (ESEC/FSE 17)</h3>
-            </header>
-            <h4>Paper</h4>
-            <a href="https://www.infosun.fim.uni-passau.de/publications/docs/SPP+17.pdf">Measuring Neural Efficiency of Program Comprehension, PDF, 1MB</a>
+            <article>
+                <header>
+                    <h3>Measuring Neural Efficiency of Program Comprehension (ESEC/FSE 17)</h3>
+                </header>
+                <ul class="authors">
+                    <li><a href="http://www.infosun.fim.uni-passau.de/se/people-jsiegmund.php">Janet Siegmund</a></li>
+                    <li>Norman Peitek</li>
+                    <li><a href="http://www.chrisparnin.me">Chris Parnin</a></li>
+                    <li><a href="http://www.infosun.fim.uni-passau.de/spl/apel/">Sven Apel</a></li>
+                    <li><a href="http://www.cessor.de">Johannes Hofmeister</a></li>
+                    <li><a href="http://www.cs.cmu.edu/~ckaestne/">Christian Kaestner</a></li>
+                    <li><a href="http://www.andrewbegel.com">Andrew Begel</a></li>
+                    <li>Anja Bethmann</li>
+                    <li>Andre Brechmann</li>
+                </ul>
+                <summary>
+                    <h4 class="abstract">Abstract</h4>
+                    Most modern software programs cannot be understood in their entirety by a single programmer. Instead, programmers must rely on a set of cognitive processes that aid in seeking, filtering, and shaping relevant information for a given programming task. Several theories have been proposed to explain these processes, such as <i>beacons</i>, for locating relevant code, and <i>plans</i>, for encoding cognitive models. However, these theories are decades old and lack validation with modern cognitive-neuroscience methods. In this paper, we report on a study using functional magnetic resonance imaging (fMRI) with 11 participants who performed program comprehension tasks. We manipulated experimental conditions related to beacons and layout to isolate specific cognitive processes related to bottom-up comprehension and comprehension based on semantic cues. We found evidence of semantic chunking during bottom-up comprehension and lower activation of brain areas during comprehension based on semantic cues, confirming that beacons ease comprehension.
+                </summary>
+                <h4>Resources</h4>
+                <ul class="resources">
+                    <li><a href="https://doi.org/10.1145/3106237.3106268">DOI: 10.1145/3106237.3106268</a></li>
+                    <li><a href="https://www.infosun.fim.uni-passau.de/publications/docs/SPP+17.pdf">Paper - Measuring Neural Efficiency of Program Comprehension, PDF, 1MB</a></li>
+                    <li><a href="https://github.com/brains-on-code/paper-esec-fse-2017">Replication Package</a></li>
+                </ul>
+            </article>
+        </section>
 
-            <h4>Abstract</h4>
-            <summary>
-                Most modern software programs cannot be understood in their entirety by a single programmer. Instead, programmers must rely on a set of cognitive processes that aid in seeking, filtering, and shaping relevant information for a given programming task. Several theories have been proposed to explain these processes, such as <i>beacons</i>, for locating relevant code, and <i>plans</i>, for encoding cognitive models. However, these theories are decades old and lack validation with modern cognitive-neuroscience methods. In this paper, we report on a study using functional magnetic resonance imaging (fMRI) with 11 participants who performed program comprehension tasks. We manipulated experimental conditions related to beacons and layout to isolate specific cognitive processes related to bottom-up comprehension and comprehension based on semantic cues. We found evidence of semantic chunking during bottom-up comprehension and lower activation of brain areas during comprehension based on semantic cues, confirming that beacons ease comprehension.
-            </summary>
-            <h4>Resources</h4>
+        <section>
+            <h1>Empirical Research of Program Comprehension</h1>
             <ul>
-                <li><a href="https://github.com/brains-on-code/paper-esec-fse-2017">Replication Package</a></li>
+                <li>
+                    <a href="http://www.infosun.fim.uni-passau.de/se/janet/">Further Resources</a>
+                </li>
             </ul>
-            <h4>Authors</h4>
-            <ul>
-                <li><a href="http://www.infosun.fim.uni-passau.de/se/people-jsiegmund.php">Janet Siegmund</a></li>
-                <li>Norman Peitek</li>
-                <li><a href="http://www.chrisparnin.me">Chris Parnin</a></li>
-                <li><a href="http://www.infosun.fim.uni-passau.de/spl/apel/">Sven Apel</a></li>
-                <li><a href="http://www.cessor.de">Johannes Hofmeister</a></li>
-                <li><a href="http://www.cs.cmu.edu/~ckaestne/">Christian Kaestner</a></li>
-                <li><a href="http://www.andrewbegel.com">Andrew Begel</a></li>
-                <li>Anja Bethmann</li>
-                <li>Andre Brechmann</li>
-            </ul>
-        </article>
-    </section>
-</div>
+        </section>
+    </div>
 
-<h1>Empirical Research of Program Comprehension</h1>
-<ul><li><a href="http://www.infosun.fim.uni-passau.de/se/janet/">Further Resources</a></li></ul>
 </body>
 </html>
 
